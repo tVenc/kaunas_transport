@@ -1,13 +1,14 @@
 {
   "domain": "vilniaus_viesasis_transportas",
   "name": "Vilniaus viešasis transportas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "documentation": "https://github.com/tavo_repo",
   "dependencies": [],
-  "codeowners": ["@tavo_vardas"],
-  "requirements": [],
-  "integration_type": "device_tracker"
+  "codeowners": ["@andrius"],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
 }
+
 
 
 
