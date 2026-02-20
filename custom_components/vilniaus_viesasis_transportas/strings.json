@@ -1,12 +1,18 @@
 {
+  "title": "Vilniaus viešasis transportas",
   "config": {
     "step": {
       "user": {
         "title": "Nustatymai",
+        "description": "Įveskite maršruto numerį, kurį norite stebėti.",
         "data": {
-          "route": "Maršruto numeris"
+          "route": "Maršruto numeris (pvz. 3G, 10, 2)"
         }
       }
+    },
+    "error": {
+      "cannot_connect": "Nepavyko prisijungti prie stops.lt",
+      "unknown": "Netikėta klaida"
     }
   }
 }
