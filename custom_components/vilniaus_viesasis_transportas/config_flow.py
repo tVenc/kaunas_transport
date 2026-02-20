@@ -1,12 +1,12 @@
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.core import callback
 
-# Turi būti identiškas manifest.json failui
 DOMAIN = "vilniaus_viesasis_transportas"
 
-class VilniusTransportConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Vilnius Transport."""
+class VilniausViesasisTransportasConfigFlow(
+    config_entries.ConfigFlow, domain=DOMAIN
+):
+    """Handle a config flow for Vilniaus viešasis transportas."""
 
     VERSION = 1
 
@@ -15,9 +15,8 @@ class VilniusTransportConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         errors = {}
 
         if user_input is not None:
-            # Čia vėliau galėsi pridėti maršruto patikrinimą
             return self.async_create_entry(
-                title=f"Maršrutas: {user_input['route']}", 
+                title=f"Maršrutas: {user_input['route']}",
                 data=user_input
             )
 
