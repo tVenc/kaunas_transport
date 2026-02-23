@@ -19,17 +19,17 @@
 type: custom:auto-entities
 card:
   type: map
-  title: "3G / 4G autobusai mieste"
+  title: "15 / 7 autobusai mieste"
   hours_to_show: 0
   dark_mode: false
 filter:
   include:
-    - entity_id: device_tracker.vln_4g_*
+    - entity_id: device_tracker.kns_15_*
       options:
-        name: "4G"
-    - entity_id: device_tracker.vln_3g_*
+        name: "15"
+    - entity_id: device_tracker.kns_7_*
       options:
-        name: "3G"
+        name: "7"
 show_empty: true
 sort:
   method: friendly_name
