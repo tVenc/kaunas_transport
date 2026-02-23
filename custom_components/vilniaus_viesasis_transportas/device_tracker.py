@@ -34,7 +34,7 @@ class kaunasTrackerManager:
             found = [l.split(",") for l in lines if len(l.split(",")) >= 6 and l.split(",")[1].upper() == self.route]
 
             for i in range(15): # Stebime iki 15 autobusų
-                dev_id = f"vln_{self.route.lower()}_{i+1}"
+                dev_id = f"kns_{self.route.lower()}_{i+1}"
                 if i < len(found):
                     bus = found[i]
                     self.hass.states.async_set(
