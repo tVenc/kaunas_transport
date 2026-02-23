@@ -7,7 +7,7 @@
 Ši integracija leidžia stebėti Kauno autobusų ir troleibusų judėjimą Home Assistant.  
 
 **Įdiegimas:**
-1. Įdiekite per **HACS** https://github.com/andiukas/Kauno_transport/
+1. Įdiekite per **HACS** https://github.com/tVenc/kaunas_transport
 2. Po įdiegimo pridėkite prie **Devices ant integrations**: Kauno viešasis transportas
 3. Laukelye: **route** įrašote maršruto numerį pvz: 4G, 14 ir t.t.
 4. Jei yra noras turėti kelis maršrutus 2 ir 3 punktus reikia pakartoti.
