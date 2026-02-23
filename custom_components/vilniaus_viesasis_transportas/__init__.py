@@ -1,10 +1,10 @@
-"""Vilniaus viešasis transportas integracija."""
+"""Kauno viešasis transportas integracija."""
 import logging
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
 # TURI SUTAPTI SU MANIFEST
-DOMAIN = "vilniaus_viesasis_transportas"
+DOMAIN = "Kauno_viesasis_transportas"
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Nustatome integraciją."""

@@ -5,21 +5,21 @@ from datetime import timedelta
 from homeassistant.helpers.event import async_track_time_interval
 
 _LOGGER = logging.getLogger(__name__)
-URL = "https://www.stops.lt/vilnius/gps_full.txt"
+URL = "https://www.stops.lt/kaunas/gps_full.txt"
 
 async def async_setup_entry(hass, entry, async_add_entities):
     """Ši funkcija paleidžiama, kai HA krauna device_tracker platformą."""
     route = entry.data.get("route", "3G").upper()
     
     # Sukuriame valdytoją, kuris tiesiogiai atnaujins būsenas
-    tracker_manager = VilniusTrackerManager(hass, route)
+    tracker_manager = kaunasTrackerManager(hass, route)
     
     async_track_time_interval(hass, tracker_manager.update_data, timedelta(seconds=30))
     await tracker_manager.update_data()
     
     return True
 
-class VilniusTrackerManager:
+class kaunasTrackerManager:
     def __init__(self, hass, route):
         self.hass = hass
         self.route = route

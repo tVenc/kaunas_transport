@@ -1,12 +1,12 @@
 import voluptuous as vol
 from homeassistant import config_entries
 
-DOMAIN = "vilniaus_viesasis_transportas"
+DOMAIN = "Kauno_viesasis_transportas"
 
-class VilniausViesasisTransportasConfigFlow(
+class KaunoViesasisTransportasConfigFlow(
     config_entries.ConfigFlow, domain=DOMAIN
 ):
-    """Handle a config flow for Vilniaus viešasis transportas."""
+    """Handle a config flow for Kauno viešasis transportas."""
 
     VERSION = 1
 

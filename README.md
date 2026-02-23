@@ -2,13 +2,13 @@
 <img width="710" height="439" alt="image" src="https://github.com/user-attachments/assets/e6e49197-50aa-480b-a106-c5f3c8d4e6fe" />
 
 
-## Vilniaus viešojo transporto integracija
+## Kauno viešojo transporto integracija
 
-Ši integracija leidžia stebėti Vilniaus autobusų ir troleibusų judėjimą Home Assistant.  
+Ši integracija leidžia stebėti Kauno autobusų ir troleibusų judėjimą Home Assistant.  
 
 **Įdiegimas:**
-1. Įdiekite per **HACS** https://github.com/andiukas/vilniaus_transport/
-2. Po įdiegimo pridėkite prie **Devices ant integrations**: Vilniaus viešasis transportas
+1. Įdiekite per **HACS** https://github.com/andiukas/Kauno_transport/
+2. Po įdiegimo pridėkite prie **Devices ant integrations**: Kauno viešasis transportas
 3. Laukelye: **route** įrašote maršruto numerį pvz: 4G, 14 ir t.t.
 4. Jei yra noras turėti kelis maršrutus 2 ir 3 punktus reikia pakartoti.
 5. Pagal maršrutą automatiškai bus sukuriami `device_tracker` objektai.
